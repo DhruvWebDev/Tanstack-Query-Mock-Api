@@ -1,5 +1,5 @@
 'use client';
-import { fetchRecipe } from "@/app/api/recipeApi";
+import { fetchRecipe } from "@/api/recipeApi";
 import { useQuery } from "@tanstack/react-query";
 import { options } from "@/component/select-option";
 import Select from 'react-select';
