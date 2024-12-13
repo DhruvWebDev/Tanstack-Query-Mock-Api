@@ -1,0 +1,271 @@
+{
+    "recipe": [
+        {
+            "id": 1,
+            "name": "Spaghetti Carbonara",
+            "description": "A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
+            "ingredients": [
+                "200g spaghetti",
+                "100g pancetta",
+                "2 large eggs",
+                "50g pecorino cheese",
+                "50g parmesan cheese",
+                "Freshly ground black pepper",
+                "Salt"
+            ],
+            "instructions": [
+                "Cook the spaghetti in a large pot of salted boiling water.",
+                "Fry the pancetta in a pan until crispy.",
+                "Beat the eggs and mix with the grated cheeses in a bowl.",
+                "Drain the pasta and combine with the pancetta.",
+                "Remove from heat and quickly mix in the egg and cheese mixture.",
+                "Serve immediately with extra cheese and pepper."
+            ],
+            "prep_time": "10 mins",
+            "cook_time": "15 mins",
+            "category": "Non-Vegetarian",
+            "servings": 2
+        },
+        {
+            "id": 2,
+            "name": "Margherita Pizza",
+            "description": "A simple yet delicious pizza with tomato sauce, mozzarella, and fresh basil.",
+            "ingredients": [
+                "1 pizza base",
+                "100g mozzarella cheese",
+                "100ml tomato sauce",
+                "Fresh basil leaves",
+                "Olive oil",
+                "Salt"
+            ],
+            "instructions": [
+                "Preheat the oven to 220°C (430°F).",
+                "Spread the tomato sauce over the pizza base.",
+                "Add slices of mozzarella and fresh basil leaves.",
+                "Drizzle with olive oil and sprinkle with salt.",
+                "Bake for 10-12 minutes until the crust is golden and cheese is melted."
+            ],
+            "prep_time": "10 mins",
+            "cook_time": "12 mins",
+            "category": "Vegetarian",
+            "servings": 2
+        },
+        {
+            "id": 3,
+            "name": "Chicken Tikka Masala",
+            "description": "A popular Indian curry with marinated chicken in a spiced tomato-based sauce.",
+            "ingredients": [
+                "500g chicken breast, cubed",
+                "1 cup yogurt",
+                "2 tbsp tikka masala paste",
+                "1 onion, chopped",
+                "2 garlic cloves, minced",
+                "1 cup tomato puree",
+                "1 cup cream",
+                "Spices (cumin, coriander, paprika)"
+            ],
+            "instructions": [
+                "Marinate the chicken with yogurt and tikka masala paste for 1 hour.",
+                "Cook the chicken in a pan until lightly browned.",
+                "Sauté onions and garlic in the same pan.",
+                "Add tomato puree and spices, and simmer for 10 minutes.",
+                "Stir in the cream and cooked chicken, and simmer for 5 minutes.",
+                "Serve with rice or naan bread."
+            ],
+            "prep_time": "15 mins",
+            "cook_time": "30 mins",
+            "category": "Non-Vegetarian",
+            "servings": 4
+        },
+        {
+            "id": 4,
+            "name": "Vegetable Stir Fry",
+            "description": "A quick and healthy dish with fresh vegetables and soy sauce.",
+            "ingredients": [
+                "1 bell pepper, sliced",
+                "1 carrot, julienned",
+                "1 zucchini, sliced",
+                "1 cup broccoli florets",
+                "2 tbsp soy sauce",
+                "1 tbsp sesame oil",
+                "1 garlic clove, minced"
+            ],
+            "instructions": [
+                "Heat sesame oil in a wok.",
+                "Add garlic and stir-fry until fragrant.",
+                "Add all vegetables and cook on high heat for 5-7 minutes.",
+                "Add soy sauce and stir until vegetables are coated.",
+                "Serve immediately with rice or noodles."
+            ],
+            "prep_time": "10 mins",
+            "cook_time": "10 mins",
+            "category": "Vegetarian",
+            "servings": 2
+        },
+        {
+            "id": 5,
+            "name": "Chocolate Chip Cookies",
+            "description": "Classic cookies with gooey chocolate chips.",
+            "ingredients": [
+                "1 cup butter, softened",
+                "1 cup sugar",
+                "1 cup brown sugar",
+                "2 eggs",
+                "2 tsp vanilla extract",
+                "3 cups all-purpose flour",
+                "1 tsp baking soda",
+                "2 cups chocolate chips"
+            ],
+            "instructions": [
+                "Preheat the oven to 180°C (350°F).",
+                "Cream together butter, sugar, and brown sugar.",
+                "Add eggs and vanilla, and mix well.",
+                "Stir in flour and baking soda until combined.",
+                "Fold in chocolate chips.",
+                "Drop spoonfuls of dough onto a baking sheet and bake for 10-12 minutes."
+            ],
+            "prep_time": "15 mins",
+            "cook_time": "12 mins",
+            "category": "Dessert",
+            "servings": 24
+        },
+        {
+            "id": 6,
+            "name": "Caesar Salad",
+            "description": "Classic salad with crisp romaine lettuce, croutons, and creamy dressing.",
+            "ingredients": [
+                "2 heads romaine lettuce",
+                "1 cup croutons",
+                "1/2 cup parmesan cheese",
+                "Caesar dressing",
+                "2 chicken breasts",
+                "Salt and pepper",
+                "Olive oil"
+            ],
+            "instructions": [
+                "Grill chicken breasts seasoned with salt and pepper.",
+                "Chop romaine lettuce into bite-sized pieces.",
+                "Slice grilled chicken.",
+                "Toss lettuce with croutons and parmesan.",
+                "Add chicken on top.",
+                "Drizzle with Caesar dressing."
+            ],
+            "prep_time": "15 mins",
+            "cook_time": "10 mins",
+            "category": "Non-Vegetarian",
+            "servings": 4
+        },
+        {
+            "id": 7,
+            "name": "Beef Lasagna",
+            "description": "Layered pasta with rich beef sauce and melted cheese.",
+            "ingredients": [
+                "500g ground beef",
+                "1 onion, chopped",
+                "2 garlic cloves",
+                "400g tomato sauce",
+                "Lasagna sheets",
+                "250g ricotta cheese",
+                "200g mozzarella",
+                "Dried oregano",
+                "Salt and pepper"
+            ],
+            "instructions": [
+                "Brown ground beef with onions and garlic.",
+                "Add tomato sauce and seasonings.",
+                "Layer lasagna sheets, meat sauce, and cheeses.",
+                "Bake at 180°C for 45 minutes.",
+                "Let rest for 10 minutes before serving."
+            ],
+            "prep_time": "20 mins",
+            "cook_time": "45 mins",
+            "category": "Non-Vegetarian",
+            "servings": 6
+        },
+        {
+            "id": 8,
+            "name": "Vegetable Lasagna",
+            "description": "A delightful vegetarian lasagna packed with seasonal vegetables.",
+            "ingredients": [
+                "Lasagna sheets",
+                "2 zucchinis, sliced",
+                "1 eggplant, cubed",
+                "1 red bell pepper",
+                "Spinach leaves",
+                "400g ricotta cheese",
+                "200g mozzarella",
+                "Tomato sauce",
+                "Fresh basil",
+                "Olive oil"
+            ],
+            "instructions": [
+                "Roast vegetables with olive oil.",
+                "Layer lasagna sheets with roasted vegetables.",
+                "Add ricotta and mozzarella between layers.",
+                "Cover with tomato sauce.",
+                "Bake at 180°C for 40 minutes.",
+                "Garnish with fresh basil."
+            ],
+            "prep_time": "25 mins",
+            "cook_time": "40 mins",
+            "category": "Vegetarian",
+            "servings": 5
+        },
+        {
+            "id": 9,
+            "name": "Thai Green Curry",
+            "description": "Spicy and creamy Thai curry with vegetables and chicken.",
+            "ingredients": [
+                "400g chicken breast",
+                "1 can coconut milk",
+                "3 tbsp green curry paste",
+                "Mixed vegetables",
+                "Thai basil leaves",
+                "Fish sauce",
+                "Sugar",
+                "Jasmine rice"
+            ],
+            "instructions": [
+                "Sauté green curry paste.",
+                "Add chicken and cook until white.",
+                "Pour in coconut milk.",
+                "Add vegetables and simmer.",
+                "Season with fish sauce and sugar.",
+                "Garnish with Thai basil.",
+                "Serve with jasmine rice."
+            ],
+            "prep_time": "15 mins",
+            "cook_time": "20 mins",
+            "category": "Non-Vegetarian",
+            "servings": 4
+        },
+        {
+            "id": 10,
+            "name": "Mushroom Risotto",
+            "description": "Creamy Italian rice dish with wild mushrooms.",
+            "ingredients": [
+                "300g arborio rice",
+                "200g mixed mushrooms",
+                "1 onion, finely chopped",
+                "2 garlic cloves",
+                "750ml vegetable stock",
+                "100ml white wine",
+                "50g parmesan cheese",
+                "Olive oil",
+                "Fresh thyme"
+            ],
+            "instructions": [
+                "Sauté onions and garlic in olive oil.",
+                "Add rice and toast lightly.",
+                "Deglaze with white wine.",
+                "Gradually add stock while stirring.",
+                "Add mushrooms halfway through cooking.",
+                "Finish with parmesan and thyme."
+            ],
+            "prep_time": "15 mins",
+            "cook_time": "25 mins",
+            "category": "Vegetarian",
+            "servings": 4
+        }
+    ]
+}
