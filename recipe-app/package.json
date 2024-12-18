@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "json-server --watch src/app/component/db.json & next dev --turbo"
+    "dev": "json-server --watch src/app/component/db.json & next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
