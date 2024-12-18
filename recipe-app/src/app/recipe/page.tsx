@@ -7,24 +7,27 @@ import { useState } from "react";
 import RecipeCard from "@/component/recipe-card";
 
 type OptionType = {
-  value: string; 
+  value: string;
   label: string;
 };
 
 export default function Page() {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
 
-
   const { data, isLoading, isError } = useQuery({
-    queryKey: ["recipe", selectedOption?.value], 
-    queryFn: () => fetchRecipe(selectedOption?.value), 
-    enabled: !!selectedOption, 
+    queryKey: ["recipe", selectedOption?.value],
+    queryFn: () => {
+      if (selectedOption?.value) {
+        return fetchRecipe(Number(selectedOption.value));
+      }
+      return null;
+    },
+    enabled: !!selectedOption,
     staleTime: Infinity,
   });
 
-  
   const handleSelectChange = (selectedOption: OptionType | null) => {
-    setSelectedOption(selectedOption); 
+    setSelectedOption(selectedOption);
   };
 
   if (isLoading) return <div>Loading...</div>;
@@ -33,17 +36,15 @@ export default function Page() {
   return (
     <div>
       <Select
-        options={options} 
-        onChange={handleSelectChange} 
+        options={options}
+        onChange={handleSelectChange}
         placeholder="Search for a recipe..."
         isServerRendered
       />
       <div>
         <h3>Recipes:</h3>
         {data && data.length > 0 ? (
-          data.map((recipe, index) => (
-            <RecipeCard key={index} recipe={recipe} />
-          ))
+          <RecipeCard recipe={data[0]} />
         ) : (
           <div>No recipes found.</div>
         )}
