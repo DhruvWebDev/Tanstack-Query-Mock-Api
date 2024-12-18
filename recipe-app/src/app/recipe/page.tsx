@@ -44,7 +44,9 @@ export default function Page() {
         <h3>Recipes:</h3>
         {/* Check if data exists and is not empty */}
         {data && data.length > 0 ? (
-          <RecipeCard recipe={data[0]} />
+          data.map((recipe, index) => (
+            <RecipeCard key={index} recipe={recipe} />
+          ))
         ) : (
           <div>No recipes found.</div> // Message if data is empty or unavailable
         )}
