@@ -6,27 +6,25 @@ import Select from "react-select";
 import { useState } from "react";
 import RecipeCard from "@/component/recipe-card";
 
-// Define the type for options
 type OptionType = {
-  value: string; // Adjust the type of value based on your data (e.g., number if needed)
+  value: string; 
   label: string;
 };
 
 export default function Page() {
-  // Track the selected option using useState
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
 
-  // Use React Query to fetch data based on the selected recipe id
+
   const { data, isLoading, isError } = useQuery({
-    queryKey: ["recipe", selectedOption?.value], // Include selected recipe ID in the query key
-    queryFn: () => fetchRecipe(selectedOption?.value), // Fetch data using the selected recipe id
-    enabled: !!selectedOption, // Ensure query is only triggered when a recipe is selected
+    queryKey: ["recipe", selectedOption?.value], 
+    queryFn: () => fetchRecipe(selectedOption?.value), 
+    enabled: !!selectedOption, 
     staleTime: Infinity,
   });
 
-  // Handle change in selected option
+  
   const handleSelectChange = (selectedOption: OptionType | null) => {
-    setSelectedOption(selectedOption); // Update the selected option in state
+    setSelectedOption(selectedOption); 
   };
 
   if (isLoading) return <div>Loading...</div>;
@@ -35,20 +33,19 @@ export default function Page() {
   return (
     <div>
       <Select
-        options={options} // Ensure options have { label, value }
-        onChange={handleSelectChange} // Pass the selected option to the handler
+        options={options} 
+        onChange={handleSelectChange} 
         placeholder="Search for a recipe..."
         isServerRendered
       />
       <div>
         <h3>Recipes:</h3>
-        {/* Check if data exists and is not empty */}
         {data && data.length > 0 ? (
           data.map((recipe, index) => (
             <RecipeCard key={index} recipe={recipe} />
           ))
         ) : (
-          <div>No recipes found.</div> // Message if data is empty or unavailable
+          <div>No recipes found.</div>
         )}
       </div>
     </div>
